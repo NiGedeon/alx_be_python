@@ -19,7 +19,11 @@ def main():
         elif choice == '2':
             # Prompt for and remove an item
           name = input("What is the item name you want to remove: ")
-          shopping_list.remove(name)
+          if name in shopping_list:
+              shopping_list.remove(name)
+          else:
+              print("The item does not exist")
+
         elif choice == '3':
             # Display the shopping list
           print(shopping_list)
