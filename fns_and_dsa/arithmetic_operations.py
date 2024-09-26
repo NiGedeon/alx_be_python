@@ -14,3 +14,4 @@ def perform_operation(num1, num2, operation):
         else :
             result = "Invalid input"
             print(result)
+        return result
