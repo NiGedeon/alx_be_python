@@ -12,11 +12,11 @@ def main():
         display_menu()
         choice = int(input("Enter your choice: "))
 
-        if choice == '1':
+        if choice == 1:
             # Prompt for and add an item
           name = input("What is the item name you want to add: ")
           shopping_list.append(name)
-        elif choice == '2':
+        elif choice == 2:
             # Prompt for and remove an item
           name = input("What is the item name you want to remove: ")
           if name in shopping_list:
@@ -24,10 +24,10 @@ def main():
           else:
               print("The item does not exist")
 
-        elif choice == '3':
+        elif choice == 3:
             # Display the shopping list
           print(shopping_list)
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
