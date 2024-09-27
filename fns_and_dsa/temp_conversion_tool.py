@@ -1,14 +1,14 @@
-fahrenheit_to_celsius_fact = 5 / 9
-celsius_to_fahrenheit_fact = 9 / 5
+FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
+CELSIUS_TO_FAHRENHEIT_FACTOR= 9 / 5
 default = 32
 
 
 def convert_to_celsius(fahrenheit):
-    return (fahrenheit - default) * fahrenheit_to_celsius_fact
+    return (fahrenheit - default) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 
 def convert_to_fahrenheit(celsius):
-    return celsius * celsius_to_fahrenheit_fact + default
+    return celsius * CELSIUS_TO_FAHRENHEIT_FACTOR+ default
 
 
 def main():
@@ -30,4 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
