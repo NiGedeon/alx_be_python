@@ -6,12 +6,8 @@ def main():
         print("Usage: python main.py <numerator> <denominator>")
         sys.exit(1)
 
-    try:
-        numerator = float(sys.argv[1])  
-        denominator = float(sys.argv[2])  
-    except ValueError:
-        print("Error: Please enter numeric values only.")
-        sys.exit(1)
+    numerator = float(sys.argv[1])  
+    denominator = float(sys.argv[2])
 
     result = safe_divide(numerator, denominator)  
     print(result)
