@@ -29,8 +29,8 @@ class Library:
         if isinstance(book,Book):
             self.books.append(book)
         else:
-            raise TypeError("The 'book' must be an instance of 'Book', or 'EBook', or 'PrintBook!'")
-        
+            raise TypeError("The 'book' must be an instance of 'Book', or 'EBook', or 'PrintBook!'"
+
     def list_books(self):
         for book in self.books:
             if isinstance(book, Book):
