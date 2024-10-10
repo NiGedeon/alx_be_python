@@ -3,14 +3,14 @@ class Book:
         self.title = title
         self.author = author
     def __str__(self):
-        return f"{self.title} by {self.author}"
+        return (f"{self.title} by {self.author}")
 
 class EBook(Book):
     def __init__(self, title, author,file_size):
         super().__init__(title, author)
         self.file_size = file_size
     def __str__(self):
-        return f"{self.title} by {self.author} {self.file_size}"
+        return (f"{self.title} by {self.author} {self.file_size}")
 
 
 class PrintBook(Book):
@@ -18,7 +18,7 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.page_count = page_count
     def __str__(self):
-         return f"{self.title} by {self.author} {self.page_count}"
+         return (f"{self.title} by {self.author} {self.page_count}")
 
 
 class Library:
@@ -29,7 +29,7 @@ class Library:
         if isinstance(book,Book):
             self.books.append(book)
         else:
-            raise TypeError("The 'book' must be an instance of 'Book', or 'EBook', or 'PrintBook!'"
+            raise TypeError("The 'book' must be an instance of 'Book', or 'EBook', or 'PrintBook!'")
 
     def list_books(self):
         for book in self.books:
