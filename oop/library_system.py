@@ -33,7 +33,7 @@ class Library:
 
     def list_books(self):
         for book in self.books:
-            if isinstance(book, Book):
+            if isinstance(book, Book) and not isinstance(book,EBook) and not isinstance(book,PrintBook):
                 print(f"Book: {book.title} by {book.author}")
             elif isinstance(book, EBook):
                 print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
